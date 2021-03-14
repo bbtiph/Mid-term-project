@@ -1,1 +1,1 @@
-# Mid-term-project
+# MidtermJavaEE
