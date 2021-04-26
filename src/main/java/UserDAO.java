@@ -1,8 +1,37 @@
+import entity.Users;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAO {
+    public Users checkLogin(String email, String password) throws SQLException,
+            ClassNotFoundException {
+
+        Connection connection = getConnection();
+        String sql = "SELECT * FROM users WHERE email = ? and password = ?";
+        PreparedStatement statement = connection.prepareStatement(sql);
+        statement.setString(1, email);
+        statement.setString(2, password);
+
+        ResultSet result = statement.executeQuery();
+
+        Users user = null;
+
+        if (result.next()) {
+            user = new Users();
+            user.setId(result.getInt("id"));
+            user.setName(result.getString("name"));
+            user.setEmail(result.getString("email"));
+        }
+
+        result.close();
+        statement.close();
+        connection.close();
+
+        return user;
+    }
+
     public static Connection getConnection(){
         Connection con=null;
         try{

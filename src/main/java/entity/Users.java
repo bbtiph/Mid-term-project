@@ -1,6 +1,12 @@
-public class Users {
+package entity;
+
+import java.io.Serializable;
+
+public class Users implements Serializable {
     private int id;
-    private String name,password,email;
+    private String name
+            ,password
+            ,email;
     public int getId() {
         return id;
     }
