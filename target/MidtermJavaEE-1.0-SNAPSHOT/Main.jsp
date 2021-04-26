@@ -32,7 +32,7 @@
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <center>
-                                <img src="welcome.jpghttps://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.clipartkey.com%2Fview%2FhTwbwm_hotel-booking-hotel-clipart%2F&psig=AOvVaw1RqjXGjFCYLddZum9X9zmz&ust=1615839023484000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJD72uXbsO8CFQAAAAAdAAAAABAD" width="1100px" height="350px" />
+                                <img src="4.jpg" width="1100px" height="350px" />
                             </center>
                         </div>
                     </div>

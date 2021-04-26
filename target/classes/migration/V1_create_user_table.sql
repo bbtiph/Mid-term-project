@@ -5,7 +5,8 @@ create table users
             primary key,
     password varchar(100) not null,
     name varchar (255),
-    email varchar (100)
+    email varchar (100),
+    teacher boolean
 );
 
 ALTER TABLE users

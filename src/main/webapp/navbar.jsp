@@ -11,8 +11,8 @@
     </style>
 </head>
 <body>
-<%--<jsp:useBean id="user" class="entity.Users" scope="session">--%>
-<%--<jsp:setProperty name="user" property="*">--%>
+<jsp:useBean id="user" class="entity.Users" scope="session">
+<jsp:setProperty name="user" property="*">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">Hotel Online Reservation </a>
